@@ -151,7 +151,7 @@ function makeScene() {
   // scene.onPointerDown = onPointerDown;
 
   // Dome
-  const dome = new BABYLON.PhotoDome("skyDome", "./assets/sky-dome.jpg",
+  const dome = new BABYLON.PhotoDome("skyDome", "./sky-dome.jpg",
     { resolution: 64, size: 6144, useDirectMapping: false }, scene);
   dome.material.backFaceCulling = false;
   //dome.material.reflectionTexture.coordinatesMode = 9;
