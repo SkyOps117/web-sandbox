@@ -14,16 +14,17 @@ function makeScene() {
   const camera = new BABYLON.FreeCamera("camera", new BABYLON.Vector3(0, 5, -15), scene);
   camera.applyGravity = true;
   camera.attachControl(canvas, true);
-
+  camera.inertia = 0;
+  
   // REMOVE DEFAULT INPUTS
   camera.inputs.clear();
-  camera.inputs.addMouseWheel();
+  //camera.inputs.addMouseWheel();
   //camera.inputs.addMouse();
   //camera.inputs.addKeyboard();
   //camera.inputs.addTouch();
 
   camera.ellipsoid = new BABYLON.Vector3(1.0, 1.618, 1.0);
-  camera.ellipsoidOffset = new BABYLON.Vector3(0, 1, 0);
+  camera.ellipsoidOffset = new BABYLON.Vector3(0, 0.5, 0);
 
   camera.fov = 1;
 
